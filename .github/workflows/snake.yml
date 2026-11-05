@@ -1,0 +1,53 @@
+name: Update Contribution Snake
+
+on:
+  schedule:
+    # 每天 03:47 UTC = 北京时间 11:47，避开整点高峰
+    - cron: "47 3 * * *"
+  # 支持在 Actions 页面手动触发
+  workflow_dispatch:
+  push:
+    # 首次把本文件推上去时立刻生成一次，免得 README 里的图长期是裂图
+    # GITHUB_TOKEN 自己发起的推送不会触发 workflow，所以不会循环
+    paths:
+      - ".github/workflows/snake.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # color_snake：蛇身颜色。浅色模式用亮紫 #a855f7，深色模式用浅紫 #c084fc
+          # 方块不设 color_dots，保持 GitHub 原生绿色梯度
+          outputs: |
+            dist/snake-light.svg?color_snake=#a855f7
+            dist/snake-dark.svg?palette=github-dark&color_snake=#c084fc
+
+      - name: Commit to assets/snake
+        run: |
+          mkdir -p assets/snake
+          cp dist/snake-light.svg assets/snake/snake-light.svg
+          cp dist/snake-dark.svg assets/snake/snake-dark.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/snake
+          if git diff --staged --quiet; then
+            echo "今日无变化，跳过提交"
+          else
+            git commit -m "chore(snake): 更新贡献贪吃蛇"
+            git push
+          fi
