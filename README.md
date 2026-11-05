@@ -35,19 +35,30 @@
 
 ### 🛠️ 技术栈
 
+##### 语言 · 前端
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats/stats-dark.svg" />
   <img align="right" width="440" src="assets/stats/stats-light.svg" alt="Pinero's GitHub Stats" />
 </picture>
 
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=dark&perline=5" />
-    <img width="296" src="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=light&perline=5" alt="TypeScript, JavaScript, React, Electron, Vite, Node.js, HTML, CSS, Git, GitHub Actions" />
-  </picture>
-</p>
+<code><img height="20" src="assets/icons/typescript.svg" alt="TypeScript" /></code>
+<code><img height="20" src="assets/icons/javascript.svg" alt="JavaScript" /></code>
+<code><img height="20" src="assets/icons/react.svg" alt="React" /></code>
+<code><img height="20" src="assets/icons/html5.svg" alt="HTML" /></code>
+<code><img height="20" src="assets/icons/css.svg" alt="CSS" /></code>
 
-平时在 Windows 上写 TypeScript：Electron + React 做桌面应用，Vite 起开发环境；插件发到 npm，构建和每日更新交给 GitHub Actions。
+##### 桌面 · 构建
+
+<code><img height="20" src="assets/icons/electron.svg" alt="Electron" /></code>
+<code><img height="20" src="assets/icons/vite.svg" alt="Vite" /></code>
+<code><img height="20" src="assets/icons/nodedotjs.svg" alt="Node.js" /></code>
+
+##### 工具
+
+<code><img height="20" src="assets/icons/npm.svg" alt="npm" /></code>
+<code><img height="20" src="assets/icons/git.svg" alt="Git" /></code>
+<code><img height="20" src="assets/icons/githubactions.svg" alt="GitHub Actions" /></code>
 
 ### 🐍 贡献贪吃蛇
 
