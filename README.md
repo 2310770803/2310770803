@@ -35,23 +35,19 @@
 
 ### 🛠️ 技术栈
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats/stats-dark.svg" />
+  <img align="right" width="440" src="assets/stats/stats-light.svg" alt="Pinero's GitHub Stats" />
+</picture>
+
 <p>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=dark" />
-    <img src="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=light" alt="TypeScript, JavaScript, React, Electron, Vite, Node.js, HTML, CSS, Git, GitHub Actions" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=dark&perline=5" />
+    <img width="280" src="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=light&perline=5" alt="TypeScript, JavaScript, React, Electron, Vite, Node.js, HTML, CSS, Git, GitHub Actions" />
   </picture>
 </p>
 
-### 📊 GitHub 数据
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/stats/stats-dark.svg" />
-    <img width="495" src="assets/stats/stats-light.svg" alt="Pinero's GitHub Stats" />
-  </picture>
-</p>
-
-<p align="center"><sub>这张卡是仓库里的 <a href="scripts/gen-stats.mjs">scripts/gen-stats.mjs</a> 每天自己算出来的，不依赖第三方服务。</sub></p>
+平时在 Windows 上写 TypeScript：Electron + React 做桌面应用，Vite 起开发环境；插件发到 npm，构建和每日更新交给 GitHub Actions。
 
 ### 🐍 贡献贪吃蛇
 
