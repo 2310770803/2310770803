@@ -43,7 +43,7 @@
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=dark&perline=5" />
-    <img width="280" src="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=light&perline=5" alt="TypeScript, JavaScript, React, Electron, Vite, Node.js, HTML, CSS, Git, GitHub Actions" />
+    <img width="296" src="https://skillicons.dev/icons?i=ts,js,react,electron,vite,nodejs,html,css,git,githubactions&theme=light&perline=5" alt="TypeScript, JavaScript, React, Electron, Vite, Node.js, HTML, CSS, Git, GitHub Actions" />
   </picture>
 </p>
 
