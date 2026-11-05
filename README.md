@@ -60,7 +60,7 @@
 <code><img height="20" src="assets/icons/git.svg" alt="Git" /></code>
 <code><img height="20" src="assets/icons/githubactions.svg" alt="GitHub Actions" /></code>
 
-### 🐍 贡献贪吃蛇
+---
 
 <p align="center">
   <picture>
@@ -68,8 +68,6 @@
     <img src="assets/snake/snake-light.svg" alt="Contribution Snake" />
   </picture>
 </p>
-
-<p align="center"><sub>🐍 这条紫蛇每天北京时间 11:47 自己出门觅食，吃掉过去一年里长出来的绿色格子。</sub></p>
 
 ---
 
